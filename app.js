@@ -9,11 +9,11 @@ let missedGuesses = 0;
 
 //  UNIVERSTIES 
 const phrases = [
-    'Auburn University',
-    'University of Georgia',
-    'University of Florida',
-    'University of Alabama',
-    'Mississippi State University'
+    'auburn university',
+    'university of georgia',
+    'university of florida',
+    'university of alabama',
+    'mississippi state university'
 ];
 
 
@@ -49,7 +49,7 @@ const checkLetter = (button) => {
     let match = null;
     for (let i = 0; i < checkLetter.length; i++) {
         if (button.textContent === checkLetter[i].textContent) {
-            checkLetter[i].className += "show";
+            checkLetter[i].classList.add("show");
             match = checkLetter[i].textContent;
         }
     }
